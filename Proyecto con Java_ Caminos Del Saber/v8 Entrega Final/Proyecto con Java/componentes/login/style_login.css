@@ -1,0 +1,87 @@
+html {
+    font-size: 62.5%;
+    font-family: 'DK Crayon Crumble', sans-serif;
+                                                
+}
+
+body {
+    font-size: 16px;
+    background-color: rgb(196, 48, 48);
+}
+.Log_in{
+    background-image:  url("/images/fondo_principal1.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto auto;
+    border-style: solid;
+    border-radius: 3rem;
+    margin: 5rem 25rem;
+    padding-bottom: 20rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.escudo{
+    display: grid;
+}
+.Log_in p{
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+.usuario{
+    display: grid;
+    background-color: greenyellow;
+    border-radius: 3rem;
+    opacity: 0.8;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.usuario h1{
+    font-size: 2rem;
+    color: black;
+}
+.botones{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+.botton1{
+    background-color: greenyellow;
+}
+.botton2{
+    background-color: rgb(189, 135, 240);
+}
+.botton3{
+    background-color: aqua;
+}
+.botton{
+    padding: 1rem;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.botton:hover{
+    transform: scale(1.3);
+}
+#bloque_dialogo{
+    margin: 1rem;
+    display: grid;
+    background-color: orange;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+

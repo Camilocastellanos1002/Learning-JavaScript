@@ -1,0 +1,47 @@
+{
+  "news": [
+    {
+      "id": "6ffe",
+      "name": "Alabai",
+      "image": "kjaja",
+      "categoryId": "8969",
+      "content": "son lo mejor",
+      "userId": "d371",
+      "publicationDate": "2024-02-12"
+    },
+    {
+      "id": "275f",
+      "name": "Alabai",
+      "image": "kjaja",
+      "categoryId": "8969",
+      "content": "jajajaja",
+      "userId": "d371",
+      "publicationDate": "2024-02-12"
+    }
+  ],
+  "categories": [
+    {
+      "id": "dab4",
+      "name": "nueva categoria",
+      "description": "nueva categoria "
+    },
+    {
+      "id": "8969",
+      "name": "perros",
+      "description": "listar tipo de perros"
+    },
+    {
+      "id": "27c1",
+      "name": "hello",
+      "description": "hello"
+    }
+  ],
+  "users": [
+    {
+      "id": "d371",
+      "name": "Your Name",
+      "email": "test@riwi.io",
+      "password": "riwi2024"
+    }
+  ]
+}

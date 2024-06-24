@@ -1,0 +1,7 @@
+node -v
+npm install -g json-server
+cd DB
+json server db.json -p 4000
+
+	http://localhost:4000/coders
+

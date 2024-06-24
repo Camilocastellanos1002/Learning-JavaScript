@@ -1,0 +1,252 @@
+//caso #1
+let quincenaHildebrando = 2500000;
+
+const almojabanaConGaseosa = 15000;
+const subwayConGaseosa = 23000;
+let decision;
+
+console.log("Hildebrando, Bienvenido al aeropuerto el dorado!");
+decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+switch (decision) {
+    case 1:
+        quincenaHildebrando-=almojabanaConGaseosa;
+        console.log("diablos, te cayo mal\nBuen viaje");
+        console.log("Hildebrando, Bienvenido a medellin!");
+        decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa}\n3.No comprar nada\nSeleccione: `);
+        switch (decision) {
+            case 1:
+                quincenaHildebrando-=almojabanaConGaseosa;
+                console.log("diablos, te cayo mal\nBuen viaje"); 
+                console.log("Hildebrando, Bienvenido a Macondo!");
+                decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                switch (decision) {
+                    case 1:
+                        quincenaHildebrando-=almojabanaConGaseosa;
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+                    break;
+                    case 2:
+                        quincenaHildebrando-= subwayConGaseosa
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+                    case 3:
+                        console.log("bienvenido");
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                    break;
+                    default:
+                        console.log("opcion erronea");
+                    break;
+                }
+            break;
+            case 2:
+                quincenaHildebrando-= subwayConGaseosa;
+                console.log("estas llenito, que bien\nBuen viaje");
+                console.log("Hildebrando, Bienvenido a Macondo!");
+                decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                switch (decision) {
+                    case 1:
+                        quincenaHildebrando-=almojabanaConGaseosa;
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+                    break;
+                    case 2:
+                        quincenaHildebrando-= subwayConGaseosa
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+                    case 3:
+                        console.log("bienvenido");
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                    break;
+                    default:
+                        console.log("opcion erronea");
+                    break;
+                }
+            break; 
+            case 3:
+                console.log("buen viaje");
+                console.log("Hildebrando, Bienvenido a Macondo!");
+                decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                switch (decision) {
+                    case 1:
+                        quincenaHildebrando-=almojabanaConGaseosa;
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+                    break;
+                    case 2:
+                        quincenaHildebrando-= subwayConGaseosa
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+                    case 3:
+                        console.log("bienvenido");
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                    break;
+                    default:
+                        console.log("opcion erronea");
+                    break;
+                }
+            break;
+            default:
+                console.log("opcion erronea");
+            break;       
+            }
+        break;
+        case 2:
+            console.log("estas llenito, que bien");
+            quincenaHildebrando-= subwayConGaseosa;
+            console.log("Hildebrando, Bienvenido a medellin!");
+            decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa}\n3.No comprar nada\nSeleccione: `);
+            switch (decision) {
+                case 1:
+                    quincenaHildebrando-=almojabanaConGaseosa;
+                    console.log("diablos, te cayo mal\nBuen viaje"); 
+                    console.log("Hildebrando, Bienvenido a Macondo!");
+                    decision = prompt("deseas comprar algo de comer luego del vuelo (Si ò No): ");
+                    decision = decision.toLocaleLowerCase;
+                    if ((decision === "Si") || (decision === "si") || (decision === "sI") || (decision === "SI")) {
+                        decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                        switch (decision) {
+                            case 1:
+                                quincenaHildebrando-=almojabanaConGaseosa;
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            break;
+                            case 2:
+                                quincenaHildebrando-= subwayConGaseosa
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            case 3:
+                                console.log("bienvenido");
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                            break;
+                            default:
+                                console.log("opcion erronea");
+                            break;
+                        }
+                    } else {
+                        console.log("Bienvenido");
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);    
+                    }
+                break;
+                case 2:
+                    quincenaHildebrando-= subwayConGaseosa;
+                    console.log("estas llenito, que bien\nBuen viaje");
+                    console.log("Hildebrando, Bienvenido a Macondo!");
+                    decision = prompt("deseas comprar algo de comer luego del vuelo (Si ò No): ");
+                    decision = decision.toLocaleLowerCase;
+                    if ((decision === "Si") || (decision === "si") || (decision === "sI") || (decision === "SI")) {
+                        decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                        switch (decision) {
+                            case 1:
+                                quincenaHildebrando-=almojabanaConGaseosa;
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            break;
+                            case 2:
+                                quincenaHildebrando-= subwayConGaseosa
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            case 3:
+                                console.log("bienvenido");
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                            break;
+                            default:
+                                console.log("opcion erronea");
+                            break;
+                        }
+                    } 
+                case 3:
+                    console.log("buen viaje");
+                    console.log("Hildebrando, Bienvenido a Macondo!");
+                    decision = prompt("deseas comprar algo de comer luego del vuelo (Si ò No): ");
+                    decision = decision.toLocaleLowerCase;
+                    if ((decision === "Si") || (decision === "si") || (decision === "sI") || (decision === "SI")) {
+                        decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                        switch (decision) {
+                            case 1:
+                                quincenaHildebrando-=almojabanaConGaseosa;
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            break;
+                            case 2:
+                                quincenaHildebrando-= subwayConGaseosa
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            case 3:
+                                console.log("bienvenido");
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                            break;
+                            default:
+                                console.log("opcion erronea");
+                            break;
+                        }
+                    } 
+                break;
+                default:
+                    console.log("opcion erronea");
+                break;       
+            }
+        break;
+        case 3:
+            console.log("buen viaje");
+            console.log("Hildebrando, Bienvenido a medellin!");
+            decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa}\n\nSeleccione: `);
+            switch (decision) {
+                case 1:
+                    quincenaHildebrando-=almojabanaConGaseosa;
+                    console.log("diablos, te cayo mal\nBuen viaje"); 
+                    console.log("Hildebrando, Bienvenido a Macondo!");
+                    decision = prompt("deseas comprar algo de comer luego del vuelo (Si ò No): ");
+                    decision = decision.toLocaleLowerCase;
+                    if ((decision === "Si") || (decision === "si") || (decision === "sI") || (decision === "SI")) {
+                        decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                        switch (decision) {
+                            case 1:
+                                quincenaHildebrando-=almojabanaConGaseosa;
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            break;
+                            case 2:
+                                quincenaHildebrando-= subwayConGaseosa
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            case 3:
+                                console.log("bienvenido");
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                            break;
+                            default:
+                                console.log("opcion erronea");
+                            break;
+                        }
+                    } else {
+                        console.log("Bienvenido");
+                        console.log(`tu saldo es: $${quincenaHildebrando}`);    
+                    }
+                break;
+                case 2:
+                    quincenaHildebrando-= subwayConGaseosa;
+                    console.log("estas llenito, que bien\nBuen viaje");
+                    console.log("Hildebrando, Bienvenido a Macondo!");
+                    decision = prompt("deseas comprar algo de comer luego del vuelo (Si ò No): ");
+                    decision = decision.toLocaleLowerCase;
+                    if ((decision === "Si") || (decision === "si") || (decision === "sI") || (decision === "SI")) {
+                        decision = prompt(`Menu: \n1.Almojabana con gaseosa $${almojabanaConGaseosa}\n2.Subway con gaseosa $${subwayConGaseosa} \n3.No Comprar nada\nSeleccione: `);
+                        switch (decision) {
+                            case 1:
+                                quincenaHildebrando-=almojabanaConGaseosa;
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            break;
+                            case 2:
+                                quincenaHildebrando-= subwayConGaseosa
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+                            case 3:
+                                console.log("bienvenido");
+                                console.log(`tu saldo es: $${quincenaHildebrando}`);
+
+                            break;
+                            default:
+                                console.log("opcion erronea");
+                            break;
+                        }
+                    }
+                default:
+                    console.log("opcion erronea");
+                break;       
+            }
+    break;
+    default:
+        console.log("opcion erronea");
+    break;
+}

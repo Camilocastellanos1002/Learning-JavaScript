@@ -1,0 +1,559 @@
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+.Principal{
+    background-image:  url("./fondo_principal1.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+main{
+    background-image:  url("./fondo_principal.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* estilos del header */
+    .Principal{
+        display: grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    .menu_ingreso{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: right;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 5rem;
+    }
+    
+    .menu_ingreso a{
+        text-decoration: none;
+        gap: 1rem;
+    }
+    .log_in{
+        color: rgb(224, 28, 28);
+        padding: 1rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    /* @media (min-width:76.8rem){
+        .body{
+            display: grid;
+            grid-template-rows: auto auto auto;
+        }
+        .Principal{
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+        .menu_ingreso{
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+        }
+    } */
+/* botones despegables */
+    .boton_despegable1{
+        display: grid;
+    }
+    .despegable{
+        display: inline-block;
+        position: relative;
+    }
+    .despegable-content{
+        display: none;
+        position:absolute;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+        border-radius: 1.2rem;
+    }
+    .despegable-content a{
+        display: block;
+        color:white ;
+        background-color:rgb(224, 28, 28);
+        opacity: 0.9;
+        padding: 0.2rem;
+        text-decoration: none;
+
+    }
+    .despegable:hover .despegable-content{
+        display: block;
+    }
+    .despegable-content a:hover{
+        background-color: rgb(151, 228, 213);
+    }
+
+    .boton_despegable2{
+        display: grid;
+    }
+    .despegable2{
+        display: inline-block;
+        position: relative;
+    }
+
+    .despegable2-content{
+        display: none;
+        position:absolute;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+        border-radius: 1.2rem;
+    }
+    
+    .boton_despegable3{
+        display: grid;
+    }
+    .despegable3{
+        display: inline-block;
+        position: relative;
+        main{
+            background-color: black;
+        }
+    }
+    .despegable2-content a{
+        display: block;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        background-color:rgb(224, 28, 28);
+        opacity: 0.9;
+        padding: 0.2rem;
+        text-decoration: none;
+
+    }
+    .despegable2:hover .despegable2-content{
+        display: block;
+    }
+    .despegable2-content a:hover{
+        background-color: rgb(151, 228, 213);
+    }
+    .contraste{
+        color: rgb(224, 28, 28);
+        padding: 0.5rem;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+    /* barras de menu */
+    .menu{
+        display: grid;
+        grid-template-columns: 37% auto;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+    }
+    .barra_menu{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 5rem;
+    }
+
+    .barra_menu a{
+        color: rgb(224, 28, 28);;
+        padding: 1.5rem;
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+    .barra_menu .inicio:hover{
+        transform: scale(1.2);
+        background-color: rgb(0, 158, 0);
+        color: white;
+    }
+    .barra_menu .quienessomos:hover{
+        transform: scale(1.2);
+        background-color: rgb(197, 210, 13);
+        color: white;
+    }
+    .barra_menu .noticiasyeventos:hover{
+        transform: scale(1.2);
+        background-color: rgb(255, 189, 8);
+        color: white;
+    }
+    .barra_menu .galeria:hover{
+        transform: scale(1.2);
+        background-color: rgb(42, 225, 216);
+        color: white;
+    }
+    .barra_menu .contactenos:hover{
+        transform: scale(1.2);
+        background-color: rgb(211, 43, 227);
+        color: white;
+    }
+    
+    
+    .menu_ingreso a:hover{
+        color:rgb(164, 22, 22);
+    }
+/* estilos del main */
+
+/* despliegue de la imagen de pie de pagina */
+    .despliegue_info{
+        background-image: url("./04.jpg");
+        opacity: 0.9;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20rem;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 5% auto 5%;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        padding: 20rem;
+    }
+    .info2 h1{
+        font-size: 6rem;
+        color: rgb(164, 22, 22);
+        font-style:italic;
+    }
+    .info2 p{
+        font-size: 3rem;
+        color: black;
+    }
+    /* .despliegue_info img{
+        border-radius: 5rem;
+        padding: 0;
+    } */
+    /* .imagen_despliegue:hover{
+        margin: 1rem;
+        transform: scale(1.15);
+    } */
+/* despliegue de publicidad */
+    .despliegue_publicidad{
+        /* background-color: aqua; */
+        padding: 1rem;
+        /* gap: 1rem;  */
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .despliegue_publicidad :hover{
+        transform: scale(1.05);
+        background-color: rgb(196, 48, 48);
+        color: white;
+        border-color: rgb(0, 158, 0);
+    }
+    .recuadro{
+        /* background-color: blueviolet; */
+        display: grid;
+        padding: 1rem;
+        gap: 1rem;
+        grid-template-columns: auto auto;
+        align-items: center;
+        margin: 7rem;
+        border-style: solid;
+        border-radius: 2rem;
+        border-color: red;  
+        background-color: rgb(255, 236, 236);
+    }
+    .image_recuadro img{
+        border-radius: 1.5rem;
+    }
+    .info_recuadro{
+        /* background-color: brown; */
+        display: grid;
+        padding: 1rem;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+/* despliegue de eventos */
+    .despliegue_eventos{
+        display: grid;
+        grid-template-rows: auto auto;
+        margin: 1rem;
+    }
+    .despli_info{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 1rem;
+    }
+
+    .titulo_evento{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        font-size: 3rem;
+        color: red;
+    }
+    .titulo_evento p{
+        font-size: 2.5rem;
+        color: red;
+    }
+    .evento{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-color: red;
+        border-radius: 2rem;
+        margin: 7rem;
+        background-color: rgb(255, 236, 236);
+    }
+    .evento:hover{
+        transform: scale(1.1);
+        background-color: rgb(150, 147, 227);
+        color: white;
+        border-color:  rgb(255, 189, 8);
+    }
+    .info_eventos{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .despliegue_eventos a{
+        background-color: red;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        margin-left: 90rem;
+
+        padding: 2rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .despliegue_eventos a:hover{
+        background-color: rgb(0, 158, 0);
+    }
+/* despliegue_fotos */
+    .despliegue_fotos{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .despliegue_fotos a{
+        text-decoration: none;
+    }
+    .despli_galeria{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .despli_galeria p{
+        font-size: 2.5rem;
+        color: red;
+    }
+    .imagen_evento img{
+        margin: 1rem;
+        border-radius: 5rem;
+    }
+    .despliegue_fotos a{
+        background-color: red;
+        border-radius: 1.5rem;
+        font-size: 2rem;
+        margin-left: 90rem;
+        padding: 2rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .despliegue_fotos a:hover{
+        background-color: rgb(0, 158, 0);
+    }
+/* calendario */
+    .calendario{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        margin: 1rem;
+        color: red;
+    }
+    .el_calendario iframe{
+        border-radius: 2rem;
+    }
+    .titulo_calendario{
+        font-size: 2rem;
+    }
+    .prox_eve{
+        display: grid;
+        border-style: solid;
+        padding: 10rem;
+        border-radius: 2rem;
+        background-color: rgb(255, 236, 236);
+    }
+    .calendario :hover{
+        transform: scale(1.1);  
+        color: rgb(0, 158, 0);
+        border-color: rgb(0, 158, 0);   
+    }
+/* Mapa */
+    .mapa{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20rem;
+        color: red;
+    }
+    .titulo_mapa{
+        
+        font-size: 2rem;
+    }
+    .titulo_mapa{
+        font-size: 2rem;
+    }
+    .el_mapa iframe{
+        border-radius: 2rem;
+        border-style: solid;
+    }
+    .el_mapa :hover{
+        transform: scale(1.1);
+    }
+
+/* pie de pagina */
+    .pie{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: space-around;
+        margin: 1rem;
+        gap: 1rem;
+        background-image:  url("./fondo_principal1.png") ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .pie_de_pagina{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+        gap: 20rem;
+        color: white;
+    }
+    .escudo{
+        display: grid;
+        grid-template-rows: auto ;
+        gap: 1rem;
+    }
+    .enlaces{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        padding: 1rem;
+        background-color: rgb(56, 42, 215);
+        border-radius: 2rem;
+        opacity: 0.8;
+    }
+    .enlaces a{
+        text-decoration: none;
+        color:white;
+        
+    }
+    .enlaces p{
+        font-size: 2.5rem;
+        color:white;
+    }
+    .contacto{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content:  center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        background-color: blueviolet;
+        border-radius: 2rem;
+        opacity: 0.8;
+    }
+    .redes_sociales{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content:  center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        background-color: orange;
+        border-radius: 2rem;
+        opacity: 0.8;
+    }
+    .redes_sociales a{
+        text-decoration: none;
+    }
+    .Copyright{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .nomenclatura{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .correo{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .telefono{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .Facebook{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .Twitter{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nomenclatura{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .Instagram{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .Whattsapp{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }  

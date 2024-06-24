@@ -1,0 +1,173 @@
+html {
+    font-size: 62.5%;
+    background-image:url('./img/hogwarts.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: #c08537; */
+
+    font-family: 'Harry Potter', sans-serif;                                            
+}
+
+body {
+    font-size: 16px;
+}
+.log_in{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    margin: 10rem;
+    padding: 2rem;
+  
+    opacity: 0.9;
+}
+.my_title h1{
+    font-size: 5rem;
+    color:#c08537;
+    margin-left: 15rem;
+}
+p{
+    color: white;
+    display: flex;
+    /* justify-content: center;  */
+}
+.estatic{
+    display: flex;
+    font-size: 2rem;
+}
+.dinamic{
+    display: flex;
+    color:white;
+    font-size: 1.3rem;
+}
+input{
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+}
+select{
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+}
+select option:hover{
+    background-color: #c08537;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+}
+
+.my_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 10rem;
+    gap: 1rem;
+    padding:1rem ; */
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+}
+.container2{
+    background-color: #c08537;
+    border-radius: 3rem;
+    margin: 3rem;
+    padding: 2rem;
+    opacity: 0.8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+}
+.container2 p{
+    font-size: 1.5rem;
+}
+.datos{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.image img{
+    border-radius: 2rem;
+}
+.my_button{
+    margin: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    background-color: #3f0d0e;
+    color: white;
+    border-radius: 2rem;
+}
+.my_button2{
+    margin: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    background-color:#3f0d0e;
+    color: white;
+    border-radius: 2rem;
+}
+.my_button3{
+    margin: 0.5rem 10rem 0.5rem 10rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    background-color:#3f0d0e;
+    color: white;
+    border-radius: 2rem;
+}
+.my_button4{
+    margin: 0.5rem 10rem 0.5rem 10rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    background-color:#3f0d0e;
+    color: white;
+    border-radius: 2rem;
+}
+.my_button5{
+    margin: 0.5rem 10rem 0.5rem 10rem;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    background-color:#3f0d0e;
+    color: white;
+    border-radius: 2rem;
+}
+.LaCena{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+}
+
+.casa{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.casa p{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #3f0d0e;
+    align-items: center;
+}
+
+@media (min-width: 60%) {
+    
+    body {
+        font-size: 10px;
+    }
+    .log_in{
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: auto;
+    }
+}
